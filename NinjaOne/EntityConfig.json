@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Organizations",
+    "SourceAPIUrl": "/v2/organizations",
+    "SharePointListName": "Organizations",
+    "ResponseNode": "",
+    "MappingColumns": [
+      {
+        "Source": "id",
+        "Target": "OrganizationID"
+      },
+      {
+        "Source": "name",
+        "Target": "OrganizationName"
+      }
+    ]
+  }
+  ,
+  {
+    "Name": "Roles",
+    "SourceAPIUrl": "/v2/roles",
+    "SharePointListName": "Roles",
+    "ResponseNode": "",
+    "MappingColumns": [
+      {
+        "Source": "id",
+        "Target": "RoleID"
+      },
+      {
+        "Source": "name",
+        "Target": "RoleName"
+      }
+    ]
+  }
+  ,
+  {
+    "Name": "Locations",
+    "SourceAPIUrl": "/v2/locations",
+    "SharePointListName": "Locations",
+    "ResponseNode": "",
+    "MappingColumns": [
+      {
+        "Source": "id",
+        "Target": "LocationID"
+      },
+      {
+        "Source": "name",
+        "Target": "LocationName"
+      },
+      {
+        "Source": "organizationId",
+        "Target": "OrganizationID"
+      }
+    ]
+  }
+  ,
+  {
+    "Name": "Devices",
+    "SourceAPIUrl": "/v2/devices-detailed",
+    "SharePointListName": "Devices",
+    "ResponseNode": "",
+    "MappingColumns": [
+      {
+        "Source": "id",
+        "Target": "DeviceID"
+      },
+      {
+        "Source": "displayName",
+        "Target": "DeviceName"
+      },
+      {
+        "Source": "organizationId",
+        "Target": "OrganizationID"
+      },
+      {
+        "Source": "locationId",
+        "Target": "LocationID"
+      },
+      {
+        "Source": "nodeRoleId",
+        "Target": "RoleID"
+      },
+      {
+        "Source": "os.name",
+        "Target": "OS_Name"
+      }
+    ]
+  }
+  ,
+  {
+    "Name": "Device Health Status",
+    "SourceAPIUrl": "/v2/queries/device-health",
+    "SharePointListName": "Device Health Status",
+    "ResponseNode":  "results",
+    "MappingColumns": [
+      {
+        "Source": "deviceId",
+        "Target": "DeviceID"
+      },
+      {
+        "Source": "failedOSPatchesCount",
+        "Target": "FailedOSPatchesCount"
+      },
+      {
+        "Source": "pendingOSPatchesCount",
+        "Target": "PendingOSPatchesCount"
+      },
+      {
+        "Source": "failedSoftwarePatchesCount",
+        "Target": "FailedSoftwarePatchesCount"
+      },
+      {
+        "Source": "pendingSoftwarePatchesCount",
+        "Target": "PendingSoftwarePatchesCount"
+      },
+      {
+        "Source": "healthStatus",
+        "Target": "HealthStatus"
+      }
+    ]
+  }
+]
