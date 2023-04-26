@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages/Microsoft.SharePointOnline.CSOM.16.1.23408.12000
+/packages/Newtonsoft.Json.13.0.3
+/.vs
+/NinjaOne/bin/Debug
+/packages/Microsoft.SharePoint.Client.14.0.4762.1000
+/NinjaOne/obj/Debug
