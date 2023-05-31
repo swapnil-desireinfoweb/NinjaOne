@@ -103,5 +103,12 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\TextFile2.txt" />
+    <Content Include="data\TextFile3.txt" />
+    <Content Include="data\TextFile5.txt" />
+    <Content Include="data\TextFile4.txt" />
+    <Content Include="data\TextFile1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
